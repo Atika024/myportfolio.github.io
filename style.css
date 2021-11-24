@@ -37,7 +37,6 @@ nav
     justify-content: space-around;
     align-items: center;
     box-shadow: 0.313rem 0.625rem 1.875rem rgba(10, 42, 102, 0.02);
-    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -449,4 +448,97 @@ footer
     {
         font-size: 58%;
     }
+}
+
+
+
+/*-------------------------------Blog section-----------------------------*/
+body, html {
+    height: 100%;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+
+.bg-image {
+    filter: blur(0.3rem);
+    -webkit-filter: blur(0.3rem);
+    height: 100%;
+    background-color: #809cb1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduction .intro-txt {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    border: 0.188rem solid #f1f1f1;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.introduction .intro-txt h1 {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.introduction .intro-txt p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.blog-container {
+    width: 60rem; 
+    margin: auto;
+}
+
+.blog-heading{
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.2rem;
+}
+
+.blog-container li{
+    border: 0.03rem solid #6aa0c7;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.blog-date {
+    font-size: 0.8rem;
+}
+
+.blog-container .bttn {
+    margin-left: 45%;
+    padding: 0.4rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.125rem;
+    border: none;
+    background-color: #87bdd6;
+    cursor: pointer;
+}
+
+.blog-container .bttn a {
+    color: #123683;
+}
+
+.blog-container .bttn:hover 
+{
+    background-color: rgb(187, 216, 236);
+    box-shadow: 0.938rem 0.938rem 0.625rem rgba(17, 75, 100, 0.3);
+    transition: all ease 0.2s;
+    font-weight: bold;
 }
